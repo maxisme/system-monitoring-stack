@@ -3,7 +3,7 @@
 # + Grafana stack
 # + Telegraf
 
-Run your stack:
+Customise the .env.example and rename to .env
 
 ```
 sudo mkdir -p /srv/docker/grafana/data
