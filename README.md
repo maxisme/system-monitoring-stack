@@ -4,6 +4,7 @@
 # + Telegraf
 
 Customise the .env.example and rename to .env
+as well as changing telegraf.conf.example to telegraf.conf and changing `<INFLUXDB_ADMIN_USER_PASSWORD>` to the above.
 
 ```
 sudo mkdir -p /srv/docker/grafana/data
