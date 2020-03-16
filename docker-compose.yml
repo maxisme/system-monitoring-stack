@@ -2,17 +2,15 @@ version: '3.1'
 
 services:
   influxdb:
-    build:
-      context: "influx/"
+    image: influxdb:latest
     container_name: influxdb
     ports:
       - "8086:8086"
     environment:
+      INFLUXDB_HTTP_AUTH_ENABLED: "true"
       INFLUXDB_ADMIN_USER: "telegraf"
       INFLUXDB_ADMIN_USER_PASSWORD: ${INFLUXDB_ADMIN_USER_PASSWORD:?err}
     volumes:
-      # Data persistency
-      # sudo mkdir -p /srv/docker/influxdb/data
       - /srv/docker/influxdb/data:/var/lib/influxdb
 
   grafana:
