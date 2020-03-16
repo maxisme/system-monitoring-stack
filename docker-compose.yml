@@ -16,6 +16,10 @@ telegraf:
   image: telegraf:latest
   container_name: telegraf
   restart: always
+  environment:
+    HOST_PROC: /rootfs/proc
+    HOST_SYS: /rootfs/sys
+    HOST_ETC: /rootfs/etc
   links:
     - influxdb
   volumes:
