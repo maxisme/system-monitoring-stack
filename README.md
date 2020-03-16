@@ -12,8 +12,10 @@ sudo chown -R 472:472 /srv/docker/grafana/data
 
 ```
 
-If you want to run Telegraf, edit the telegraf.conf to yours needs and:
+install telegraph with:
 
-```
-docker exec telegraf telegraf
+```bash
+$ apt-get -y install telegraf
+$ cp telegraf.conf /etc/telegraf/telegraf.conf
+$ service telegraf restart
 ```
