@@ -10,7 +10,6 @@ as well as changing telegraf.conf.example to telegraf.conf and changing `<INFLUX
 sudo mkdir -p /srv/docker/grafana/data
 docker-compose up -d
 sudo chown -R 472:472 /srv/docker/grafana/data
-
 ```
 
 install telegraph with:
