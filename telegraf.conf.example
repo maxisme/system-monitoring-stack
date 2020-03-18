@@ -1947,3 +1947,5 @@
  [[inputs.nvidia_smi]]
 
  [[inputs.docker]]
+
+ [[inputs.temp]]
