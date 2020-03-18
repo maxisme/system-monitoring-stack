@@ -3,7 +3,8 @@
 # + Grafana stack
 # + Telegraf
 
-Customise the `env.influxdb.example` and rename to `env.influxdb` with a custom INFLUXDB_ADMIN_PASSWORD
+ - Customise the `env.influxdb.example` and rename to `env.influxdb` with a custom INFLUXDB_ADMIN_PASSWORD
+ - Customise the `config/grafana.ini.example` to `config/grafana.ini`
 
 ```
 sudo mkdir -p /srv/docker/grafana/data
