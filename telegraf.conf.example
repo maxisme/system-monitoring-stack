@@ -1949,3 +1949,5 @@
  [[inputs.docker]]
 
  [[inputs.temp]]
+
+ [[inputs.sensors]]
