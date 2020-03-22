@@ -14,6 +14,7 @@ services:
 
   kapacitor:
     image: kapacitor
+    restart: always
     environment:
       KAPACITOR_HOSTNAME: kapacitor
       KAPACITOR_INFLUXDB_0_URLS_0: http://influxdb:8086
