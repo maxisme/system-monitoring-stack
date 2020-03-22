@@ -12,6 +12,18 @@ services:
     volumes:
       - /srv/docker/influxdb/data:/var/lib/influxdb
 
+  kapacitor:
+    image: kapacitor
+    environment:
+      KAPACITOR_HOSTNAME: kapacitor
+      KAPACITOR_INFLUXDB_0_URLS_0: http://influxdb:8086
+    volumes:
+      - /srv/docker/kapacitor/data:/var/lib/kapacitor
+    links:
+      - influxdb
+    ports:
+      - "9092:9092"
+
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
