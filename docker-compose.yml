@@ -18,6 +18,7 @@ services:
     restart: always
     volumes:
       - /srv/docker/kapacitor/data:/var/lib/kapacitor
+      - ./config/kapacitor.conf:/etc/kapacitor/kapacitor.conf
     links:
       - influxdb
     ports:
