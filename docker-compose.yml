@@ -14,10 +14,8 @@ services:
 
   kapacitor:
     image: kapacitor
+    container_name: kapacitor
     restart: always
-    environment:
-      KAPACITOR_HOSTNAME: kapacitor
-      KAPACITOR_INFLUXDB_0_URLS_0: http://influxdb:8086
     volumes:
       - /srv/docker/kapacitor/data:/var/lib/kapacitor
     links:
