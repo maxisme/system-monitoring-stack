@@ -30,7 +30,7 @@ services:
     volumes:
       - /srv/docker/kapacitor/data:/var/lib/chronograf
     ports:
-      - 127.0.0.1:8087:8888
+      - 8087:8888
     links:
       - influxdb
 
