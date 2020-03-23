@@ -5,7 +5,7 @@ services:
     image: influxdb:latest
     container_name: influxdb
     ports:
-      - "127.0.0.1:8086:8086"
+      - "8086:8086"
     restart: always
     env_file:
       - 'env.influxdb'
@@ -38,7 +38,7 @@ services:
     image: grafana/grafana:latest
     container_name: grafana
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     env_file:
       - 'env.grafana'
     user: "0"
