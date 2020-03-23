@@ -1,8 +1,3 @@
-# Docker-compose files for a simple uptodate
-# InfluxDB
-# + Grafana stack
-# + Telegraf
-
  - Customise the `env.influxdb.example` and rename to `env.influxdb` with a custom `INFLUXDB_ADMIN_PASSWORD`
  - Customise the `config/grafana.ini.example` to `config/grafana.ini`
  - Customise the `config/kapacitor.conf.example` to `config/kapacitor.conf` and setting the `[[influxdb]]` password to `INFLUXDB_ADMIN_PASSWORD`
