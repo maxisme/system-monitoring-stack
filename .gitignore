@@ -1,3 +1,2 @@
 env.influxdb
-telegraf.conf
-config/grafana.ini
+config/kapacitor.conf
